@@ -7,9 +7,9 @@ import revxrsal.commands.bukkit.BukkitCommandActor
 import revxrsal.commands.bukkit.annotation.CommandPermission
 
 class HelpCommand {
-    @CommandPermission("joblistings.help")
+    @CommandPermission("employ.help")
     @Description("Displays command info")
-    @Command("joblistings help")
+    @Command("employ help")
     fun help(actor: BukkitCommandActor) {
         actor.reply(MessageUtil.getMessage("Help.Page1"))
     }

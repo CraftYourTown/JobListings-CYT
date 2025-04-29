@@ -12,9 +12,9 @@ import revxrsal.commands.bukkit.annotation.CommandPermission
 import revxrsal.commands.bukkit.player
 
 class OwnedOrders {
-    @CommandPermission("joblistings.view.owned")
+    @CommandPermission("employ.view.owned")
     @Description("View and manage orders you own")
-    @Command("joblistings owned")
+    @Command("employ owned")
     fun viewOrder(
         actor: BukkitCommandActor,
         @Optional player: Player? = null,

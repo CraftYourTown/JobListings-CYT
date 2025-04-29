@@ -11,9 +11,9 @@ import revxrsal.commands.bukkit.BukkitCommandActor
 import revxrsal.commands.bukkit.annotation.CommandPermission
 
 class PresetInfo {
-    @CommandPermission("joblistings.admin.view.preset")
+    @CommandPermission("employ.admin.view.preset")
     @Description("Gets the info for a preset in chat.")
-    @Command("joblistings preset info")
+    @Command("employ preset info")
     @AutoComplete("@presets")
     fun presetInfo(
         actor: BukkitCommandActor,

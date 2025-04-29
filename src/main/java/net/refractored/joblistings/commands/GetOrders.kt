@@ -13,7 +13,7 @@ import revxrsal.commands.bukkit.annotation.CommandPermission
 import revxrsal.commands.bukkit.player
 
 class GetOrders {
-    @CommandPermission("joblistings.view.orders")
+    @CommandPermission("employ.view.orders")
     @Description("View all pending orders")
     @DefaultFor("joblistings")
     @Subcommand("orders")

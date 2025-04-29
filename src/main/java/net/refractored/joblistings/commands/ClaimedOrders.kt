@@ -12,9 +12,9 @@ import revxrsal.commands.bukkit.annotation.CommandPermission
 import revxrsal.commands.bukkit.player
 
 class ClaimedOrders {
-    @CommandPermission("joblistings.view.claimed")
+    @CommandPermission("employ.view.claimed")
     @Description("View the orders you claimed")
-    @Command("joblistings claimed")
+    @Command("employ claimed")
     fun getOrders(
         actor: BukkitCommandActor,
         @Optional player: Player? = null,

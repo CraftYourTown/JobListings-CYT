@@ -12,9 +12,9 @@ import revxrsal.commands.bukkit.annotation.CommandPermission
 import revxrsal.commands.bukkit.player
 
 class PresetGet {
-    @CommandPermission("joblistings.admin.get.preset")
+    @CommandPermission("employ.admin.get.preset")
     @Description("Gets the item for the preset.")
-    @Command("joblistings preset get")
+    @Command("employ preset get")
     @AutoComplete("@presets")
     fun presetGet(
         actor: BukkitCommandActor,

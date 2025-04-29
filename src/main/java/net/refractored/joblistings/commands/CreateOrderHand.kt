@@ -20,9 +20,9 @@ import revxrsal.commands.bukkit.player
 import java.util.*
 
 class CreateOrderHand {
-    @CommandPermission("joblistings.create.hand")
+    @CommandPermission("employ.create.hand")
     @Description("Create an order from the item in your hand")
-    @Command("joblistings create hand")
+    @Command("employ create hand")
     fun createOrderHand(
         actor: BukkitCommandActor,
         cost: Double,

@@ -22,9 +22,9 @@ import revxrsal.commands.bukkit.player
 import java.util.*
 
 class CreateOrderMaterial {
-    @CommandPermission("joblistings.create.material")
+    @CommandPermission("employ.create.material")
     @Description("Create an order from the specified material.")
-    @Command("joblistings create material")
+    @Command("employ create material")
     @AutoComplete("@materials * * *")
     fun createOrderMaterial(
         actor: BukkitCommandActor,

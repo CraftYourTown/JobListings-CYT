@@ -16,9 +16,9 @@ import revxrsal.commands.bukkit.player
 import java.util.*
 
 class CompleteOrders {
-    @CommandPermission("joblistings.completeorders")
+    @CommandPermission("employ.completeorders")
     @Description("Scans your inventory for items to complete an order")
-    @Command("joblistings complete")
+    @Command("employ complete")
     fun completeOrders(actor: BukkitCommandActor) {
         val queryBuilder: QueryBuilder<Order, UUID> = orderDao.queryBuilder()
         queryBuilder

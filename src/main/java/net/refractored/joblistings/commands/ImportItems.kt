@@ -17,9 +17,9 @@ import revxrsal.commands.bukkit.BukkitCommandActor
 import revxrsal.commands.bukkit.annotation.CommandPermission
 
 class ImportItems {
-    @CommandPermission("joblistings.admin.import")
+    @CommandPermission("employ.admin.import")
     @Description("Imports items from other plugins.")
-    @Command("joblistings preset import")
+    @Command("employ preset import")
     @AutoComplete("eco|ItemsAdder|enchants")
     fun importItems(
         actor: BukkitCommandActor,

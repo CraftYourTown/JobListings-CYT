@@ -12,9 +12,9 @@ import revxrsal.commands.bukkit.annotation.CommandPermission
 import revxrsal.commands.bukkit.player
 
 class CreatePreset {
-    @CommandPermission("joblistings.admin.create.preset")
+    @CommandPermission("employ.admin.create.preset")
     @Description("Adds a preset to the config and memory.")
-    @Command("joblistings preset create")
+    @Command("employ preset create")
     fun createPreset(
         actor: BukkitCommandActor,
         presetName: String,

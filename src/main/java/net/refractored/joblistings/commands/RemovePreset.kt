@@ -11,9 +11,9 @@ import revxrsal.commands.bukkit.BukkitCommandActor
 import revxrsal.commands.bukkit.annotation.CommandPermission
 
 class RemovePreset {
-    @CommandPermission("joblistings.admin.remove.preset")
+    @CommandPermission("employ.admin.remove.preset")
     @Description("Removes a preset from the config and memory.")
-    @Command("joblistings preset remove")
+    @Command("employ preset remove")
     @AutoComplete("@presets")
     fun removePreset(
         actor: BukkitCommandActor,

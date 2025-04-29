@@ -132,7 +132,7 @@ compileJava {
 }
 
 shadowJar {
-    archiveFileName = "JobListings-${version}.jar"
+    archiveFileName = "JobListings-CYT.jar"
 //    relocate('kotlin', 'net.refractored.libs.kotlin')
     relocate("org.bstats", "net.refractored.libs.bstats")
 
