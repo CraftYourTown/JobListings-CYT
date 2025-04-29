@@ -23,7 +23,7 @@ class ClaimedOrders {
             actor.player.openInventory(ClaimedOrders.getGUI(actor.player).inventory)
             return
         }
-        if (!actor.player.hasPermission("joblistings.view.claimed.other")) {
+        if (!actor.player.hasPermission("employ.view.claimed.other")) {
             throw CommandErrorException(MessageUtil.getMessage("General.NoPermission"))
         }
         if (actor.isConsole) {

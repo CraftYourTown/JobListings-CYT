@@ -29,10 +29,10 @@ permissions:
   employ.view.claimed.other:
     description: "Open the claimed orders GUI for other players."
     default: op
-  employ.view.orders:
+  employ.view.myorders:
     description: "View all pending orders."
     default: true
-  employ.view.orders.other:
+  employ.view.myorders.other:
     description: "Open the orders GUI for other players."
     default: op
   employ.completeorders:

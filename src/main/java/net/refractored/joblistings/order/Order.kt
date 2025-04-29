@@ -517,8 +517,8 @@ data class Order(
             val maxOrderAmount =
                 player.effectivePermissions
                     .filter {
-                        it.permission.startsWith("joblistings.create.max.")
-                    }.mapNotNull { it.permission.substringAfter("joblistings.create.max.").toIntOrNull() }
+                        it.permission.startsWith("employ.create.max.")
+                    }.mapNotNull { it.permission.substringAfter("employ.create.max.").toIntOrNull() }
                     .maxOrNull()
                     ?: JobListings.instance.config.getInt("Orders.MaxOrders", 1)
 
@@ -535,8 +535,8 @@ data class Order(
             val maxOrdersAccepted =
                 player.effectivePermissions
                     .filter {
-                        it.permission.startsWith("joblistings.accepted.max.")
-                    }.mapNotNull { it.permission.substringAfter("joblistings.accepted.max.").toIntOrNull() }
+                        it.permission.startsWith("employ.accepted.max.")
+                    }.mapNotNull { it.permission.substringAfter("employ.accepted.max.").toIntOrNull() }
                     .maxOrNull()
                     ?: JobListings.instance.config.getInt("Orders.MaxOrdersAccepted", 1)
 

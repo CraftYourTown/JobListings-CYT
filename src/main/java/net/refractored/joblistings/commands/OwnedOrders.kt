@@ -12,9 +12,9 @@ import revxrsal.commands.bukkit.annotation.CommandPermission
 import revxrsal.commands.bukkit.player
 
 class OwnedOrders {
-    @CommandPermission("employ.view.owned")
+    @CommandPermission("employ.view.myorders")
     @Description("View and manage orders you own")
-    @Command("employ owned")
+    @Command("employ myorders")
     fun viewOrder(
         actor: BukkitCommandActor,
         @Optional player: Player? = null,
@@ -23,7 +23,7 @@ class OwnedOrders {
             actor.player.openInventory(MyOrders.getGUI(actor.player).inventory)
             return
         }
-        if (!actor.player.hasPermission("joblistings.view.owned.others")) {
+        if (!actor.player.hasPermission("employ.view.myorders.others")) {
             throw CommandErrorException(MessageUtil.getMessage("General.NoPermission"))
         }
         if (actor.isConsole) {

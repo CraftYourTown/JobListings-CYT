@@ -13,24 +13,16 @@ import revxrsal.commands.bukkit.annotation.CommandPermission
 import revxrsal.commands.bukkit.player
 
 class GetOrders {
-    @CommandPermission("employ.view.orders")
+    @CommandPermission("employ.view.myorders")
     @Description("View all pending orders")
-    @DefaultFor("joblistings")
+    @DefaultFor("employ")
     @Subcommand("orders")
     fun getOrders(
         actor: BukkitCommandActor,
-        @Optional player: Player? = null,
     ) {
-        if (player == null) {
-            actor.player.openInventory(AllOrders.getGUI().inventory)
-            return
-        }
-        if (!actor.player.hasPermission("joblistings.view.orders.others")) {
-            throw CommandErrorException(MessageUtil.getMessage("General.NoPermission"))
-        }
         if (actor.isConsole) {
             throw CommandErrorException(MessageUtil.getMessage("General.PlayerOnly"))
         }
-        player.openInventory(AllOrders.getGUI().inventory)
+        actor.player.openInventory(AllOrders.getGUI().inventory)
     }
 }

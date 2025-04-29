@@ -18,6 +18,8 @@ Orders:
   # employ.accepted.max.X
   MaxOrders: 3
   MaxOrdersAccepted: 3
+  # Min Order Value
+  MinOrderValue: 500
   # Maximum/Minimum time in hours orders can be posted for
   MaxOrdersTime: 192
   MinOrdersTime: 48

@@ -51,6 +51,21 @@ class CreateOrderMaterial {
             )
         }
 
+        if (cost < JobListings.instance.config.getLong("Orders.MinOrderValue")) {
+            throw CommandErrorException(
+                MessageUtil.getMessage(
+                    "CreateOrder.MinimumOrderValue",
+                    listOf(
+                        MessageReplacement(
+                            JobListings.instance.config
+                                .getLong("Orders.MinOrderValue")
+                                .toString(),
+                        ),
+                    ),
+                ),
+            )
+        }
+
         if (hours > JobListings.instance.config.getLong("Orders.MaxOrdersTime")) {
             throw CommandErrorException(
                 MessageUtil.getMessage(
